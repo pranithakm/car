@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/car/static/css/main.255807b4.css",
+    "main.js": "/car/static/js/main.8f8041c4.js",
+    "static/js/488.11b26e2b.chunk.js": "/car/static/js/488.11b26e2b.chunk.js",
+    "static/media/hero-png.png": "/car/static/media/hero-png.7becfe35474a2df96101.png",
+    "static/media/img.jpg": "/car/static/media/img.65523e0283adc4957f79.jpg",
+    "static/media/camper.png": "/car/static/media/camper.9079866d380e6149f98c.png",
+    "static/media/pickup.png": "/car/static/media/pickup.6ff8eeeb3c752e8be0f0.png",
+    "static/media/minivan.png": "/car/static/media/minivan.e254bfa602a346f6cc6f.png",
+    "static/media/sedan.png": "/car/static/media/sedan.8e51d5416c7d78316f42.png",
+    "static/media/supercar.png": "/car/static/media/supercar.c3f62f3e63a8647c1918.png",
+    "static/media/cabriolet.png": "/car/static/media/cabriolet.0089b0b5e7a561109d3f.png",
+    "index.html": "/car/index.html",
+    "main.255807b4.css.map": "/car/static/css/main.255807b4.css.map",
+    "main.8f8041c4.js.map": "/car/static/js/main.8f8041c4.js.map",
+    "488.11b26e2b.chunk.js.map": "/car/static/js/488.11b26e2b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.255807b4.css",
+    "static/js/main.8f8041c4.js"
+  ]
+}
