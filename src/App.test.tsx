@@ -1,9 +1,16 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders Carspace heading', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const headingElement = screen.getByText(/Carspace/i);
+  expect(headingElement).toBeInTheDocument();
+});
+
+test('renders user dashboard by default', () => {
+  render(<App />);
+  const heroText = screen.getByText(/Find Quality-Assured Cars/i);
+  expect(heroText).toBeInTheDocument();
 });

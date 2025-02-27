@@ -1,0 +1,133 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.side-navbar {
+  width: 250px;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-navbar .logo {
+  margin-bottom: 30px;
+}
+
+.side-navbar .logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.side-navbar .logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.side-navbar .nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-navbar .nav-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: background-color 0.3s;
+}
+
+.side-navbar .nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.side-navbar .nav-item.active {
+  background-color: #007bff;
+}
+
+.nav-icon {
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #f5f5f5;
+}
+
+.top-bar {
+  position: relative;
+  top:-80px;
+  background-color: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.user-name {
+  font-weight: 500;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  min-width: 150px;
+  margin-top: 8px;
+}
+
+.user-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.user-dropdown button:hover {
+  background-color: #f5f5f5;
+}
+
+.page-content {
+  padding: 24px;
+}

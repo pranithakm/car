@@ -1,0 +1,260 @@
+.about-us-page {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.about-hero-section {
+  background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1920');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.about-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.about-hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.about-content-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.about-accent {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+/* Journey Section */
+.about-journey-section {
+  margin-bottom: 4rem;
+}
+
+.about-journey-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-journey-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.about-stat-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.about-stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.about-stat-item h3 {
+  font-size: 2.5rem;
+  color: #ff4d4d;
+  margin: 0;
+}
+
+.about-stat-item p {
+  margin: 0.5rem 0 0;
+  color: #666;
+}
+
+.about-journey-image {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.about-journey-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Values Section */
+.about-values-section {
+  margin-bottom: 4rem;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-value-item {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-value-item:hover {
+  transform: translateY(-5px);
+}
+
+.about-value-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-value-item h3 {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.about-value-item p {
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Team Section */
+.about-team-section {
+  margin-bottom: 4rem;
+}
+
+.about-team-intro {
+  max-width: 800px;
+  margin: 1rem auto 3rem;
+  text-align: center;
+  color: #666;
+}
+
+.about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.about-team-member {
+  text-align: center;
+}
+
+.about-member-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.about-member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-team-member h3 {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.about-team-member p {
+  margin: 0;
+  color: #666;
+}
+
+/* CTA Section */
+.about-cta-section {
+  background: #0066ff;
+  color: white;
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  margin-top: 4rem;
+}
+
+.about-cta-content {
+  text-align: center;
+}
+
+.about-cta-content h2 {
+  margin: 0 0 2rem;
+  font-size: 2rem;
+}
+
+.about-cta-button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-cta-button:hover {
+  background: #ff3333;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .about-journey-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .about-journey-text {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-content-section {
+    padding: 2rem 1rem;
+  }
+  
+  .about-stats {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  
+  .about-stat-item h3 {
+    font-size: 2rem;
+  }
+  
+  .about-team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .about-member-image {
+    width: 150px;
+    height: 150px;
+  }
+}
